@@ -17,6 +17,7 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: auto;
+  padding: 0.5rem;
 }
 
 /* Navbar */
@@ -24,34 +25,48 @@ body {
   background: #111;
   color: #fff;
   padding: 1rem 0;
+  position: sticky;
 }
 
-.navbar .logo {
-  float: left;
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.navbar nav {
-  float: right;
-}
-
-.navbar .nav-links {
+/* Navigation Links */
+.nav-links {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
-.navbar .nav-links li a {
+.nav-links li a {
   color: #fff;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.navbar .nav-links li a:hover {
+.nav-links li a:hover {
   color: #00bcd4;
 }
 
+/* Hamburger Button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hero Section */
 .hero {
   background: linear-gradient(to right, #00bcd4, #2196f3);
   color: white;
@@ -60,7 +75,7 @@ body {
 }
 
 .hero .btn {
-  margin-top: 1rem;
+  margin-top: 4rem;
   padding: 0.8rem 2rem;
   background: #fff;
   color: #2196f3;
@@ -75,6 +90,7 @@ body {
   background: #e0e0e0;
 }
 
+/* Features Section */
 .features {
   padding: 3rem 0;
   background: white;
@@ -96,6 +112,7 @@ body {
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
+/* Testimonials Section */
 .testimonials {
   padding: 3rem 0;
   background: #f0f0f0;
@@ -108,6 +125,7 @@ blockquote {
   max-width: 600px;
 }
 
+/* Call to Action */
 .cta {
   padding: 2rem;
   background: #2196f3;
@@ -125,6 +143,7 @@ blockquote {
   border-radius: 5px;
 }
 
+/* Footer */
 .footer {
   background: #111;
   color: #ccc;
@@ -132,20 +151,39 @@ blockquote {
   padding: 1rem 0;
   font-size: 0.9rem;
 }
+.content{
+    padding: 2rem;
+}
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .feature-grid {
+  .nav-links {
     flex-direction: column;
-  }
-
-  .navbar nav, .navbar .logo {
-    float: none;
+    background-color: #111;
+    width: 100%;
+    display: none;
     text-align: center;
+    padding: 1rem 0;
   }
 
-  .navbar .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-container {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  nav {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1000;
   }
 }
