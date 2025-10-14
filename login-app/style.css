@@ -1,0 +1,55 @@
+body {
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #34c759;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #28a745;
+}
+
+#message {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #ffeb3b;
+}

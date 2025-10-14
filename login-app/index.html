@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login System (JavaScript)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Simple Login System</h1>
+
+    <div id="register-section" class="card">
+      <h2>Register</h2>
+      <input type="text" id="regUsername" placeholder="Enter username" />
+      <input type="password" id="regPassword" placeholder="Enter password" />
+      <button onclick="register()">Register</button>
+    </div>
+
+    <div id="login-section" class="card">
+      <h2>Login</h2>
+      <input type="text" id="loginUsername" placeholder="Enter username" />
+      <input type="password" id="loginPassword" placeholder="Enter password" />
+      <button onclick="login()">Login</button>
+    </div>
+
+    <p id="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
