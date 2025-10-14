@@ -1,0 +1,132 @@
+/* ===== Modern Temperature Converter ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg-gradient: linear-gradient(135deg, #141e30, #243b55);
+  --card-bg: rgba(255,255,255,0.08);
+  --text: #ffffff;
+  --accent: #00c6ff;
+  --accent2: #0072ff;
+  --radius: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--bg-gradient);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* Title */
+.title {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-shadow: 0 0 15px rgba(0,198,255,0.6);
+}
+
+/* Converter Card */
+.converter-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius);
+  box-shadow: 0 0 25px rgba(0,198,255,0.2);
+  padding: 25px;
+  animation: fadeIn 1s ease;
+}
+
+/* Input Fields */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #aee7ff;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--radius);
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.1);
+  color: var(--text);
+  transition: 0.3s;
+}
+
+input:focus, select:focus {
+  box-shadow: 0 0 8px var(--accent);
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(0,198,255,0.6);
+}
+
+/* Result Box */
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: var(--radius);
+  background: rgba(255,255,255,0.08);
+  font-size: 1rem;
+  color: #dff6ff;
+  animation: slideUp 0.6s ease;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #a9b9d0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .converter-card {
+    padding: 20px;
+  }
+  .title {
+    font-size: 1.6rem;
+  }
+}
