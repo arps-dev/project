@@ -1,0 +1,151 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Navbar */
+.navbar {
+  background: #111;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.navbar .logo {
+  float: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar nav {
+  float: right;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+  color: #00bcd4;
+}
+
+.hero {
+  background: linear-gradient(to right, #00bcd4, #2196f3);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero .btn {
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  background: #fff;
+  color: #2196f3;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.hero .btn:hover {
+  background: #e0e0e0;
+}
+
+.features {
+  padding: 3rem 0;
+  background: white;
+  text-align: center;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.feature-item {
+  flex: 1;
+  padding: 1rem;
+  background: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.testimonials {
+  padding: 3rem 0;
+  background: #f0f0f0;
+  text-align: center;
+}
+
+blockquote {
+  font-style: italic;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+.cta {
+  padding: 2rem;
+  background: #2196f3;
+  color: white;
+  text-align: center;
+}
+
+.cta .btn {
+  background: white;
+  color: #2196f3;
+  padding: 0.8rem 2rem;
+  margin-top: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.footer {
+  background: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .feature-grid {
+    flex-direction: column;
+  }
+
+  .navbar nav, .navbar .logo {
+    float: none;
+    text-align: center;
+  }
+
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
