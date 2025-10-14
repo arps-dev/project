@@ -10,7 +10,7 @@
 
   <div class="container">
     <h1 class="title">🌡️ Temperature Converter</h1>
-    
+
     <div class="converter-card">
       <div class="input-group">
         <label for="temp">Enter Temperature</label>
@@ -18,10 +18,19 @@
       </div>
 
       <div class="input-group">
-        <label for="unit">Select Unit</label>
-        <select id="unit">
+        <label for="fromUnit">Convert From</label>
+        <select id="fromUnit">
           <option value="celsius">Celsius (°C)</option>
           <option value="fahrenheit">Fahrenheit (°F)</option>
+          <option value="kelvin">Kelvin (K)</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="toUnit">Convert To</label>
+        <select id="toUnit">
+          <option value="fahrenheit">Fahrenheit (°F)</option>
+          <option value="celsius">Celsius (°C)</option>
           <option value="kelvin">Kelvin (K)</option>
         </select>
       </div>
@@ -29,13 +38,13 @@
       <button id="convert-btn">Convert</button>
 
       <div class="result" id="result">
-        <p>Converted Values Will Appear Here</p>
+        <p>Converted result will appear here...</p>
       </div>
     </div>
   </div>
 
   <footer>
-    <p>All rights  reserved</p>
+    <p>Made  by Arpita Singh</p>
   </footer>
 
   <script src="script.js"></script>

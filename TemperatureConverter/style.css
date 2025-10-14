@@ -2,7 +2,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg-gradient: linear-gradient(135deg, #141e30, #243b55);
+  --bg-gradient: linear-gradient(135deg, #0a1f44, #162447, #1f4068);
   --card-bg: rgba(255,255,255,0.08);
   --text: #ffffff;
   --accent: #00c6ff;
@@ -39,11 +39,11 @@ body {
 /* Converter Card */
 .converter-card {
   background: var(--card-bg);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
   border-radius: var(--radius);
-  box-shadow: 0 0 25px rgba(0,198,255,0.2);
+  box-shadow: 0 0 25px rgba(0,198,255,0.25);
   padding: 25px;
-  animation: fadeIn 1s ease;
+  animation: fadeIn 0.9s ease;
 }
 
 /* Input Fields */
@@ -102,6 +102,7 @@ button:hover {
   font-size: 1rem;
   color: #dff6ff;
   animation: slideUp 0.6s ease;
+  word-wrap: break-word;
 }
 
 /* Footer */
