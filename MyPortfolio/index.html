@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Arpita Singh — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <img src="images/profile.jpg" alt="Arpita Singh" class="profile-photo" />
+      <div class="info">
+        <h1>Arpita Singh</h1>
+        <p class="subtitle">4th Year CSE Student • Web Developer • Tech Enthusiast</p>
+        <div class="links">
+          <a href="mailto:arpitasingh97501@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/arpita57" target="_blank">LinkedIn</a>
+          <a href="https://github.com/Arpita211" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card fade-in">
+      <h2>About Me</h2>
+      <p>
+        I’m a 4th-year Computer Science student at Dr. A.P.J. Abdul Kalam Technical University (AKTU),
+        passionate about leveraging technology to solve real-world problems. I enjoy building web apps
+        and exploring AI/ML, cloud computing, and cybersecurity.
+      </p>
+    </section>
+
+    <section class="card fade-in">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>HTML5 &amp; CSS3</li>
+        <li>JavaScript</li>
+        <li>Web Development</li>
+        <li>WordPress</li>
+        <li>Git &amp; GitHub</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects fade-in">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="images/project1.jpg" alt="Project 1">
+          <div class="project-content">
+            <h3>Portfolio Website</h3>
+            <p>A responsive personal website built with HTML, CSS, and JavaScript showcasing my projects and skills.</p>
+            <a href="https://github.com/Arpita211" target="_blank">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/project2.jpg" alt="Project 2">
+          <div class="project-content">
+            <h3>AI Chatbot</h3>
+            <p>A simple AI chatbot using Python and NLP concepts that interacts naturally with users.</p>
+            <a href="https://github.com/Arpita211" target="_blank">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/project3.jpg" alt="Project 3">
+          <div class="project-content">
+            <h3>WordPress Business Site</h3>
+            <p>Developed a custom WordPress website for a local business with SEO optimization and clean design.</p>
+            <a href="https://github.com/Arpita211" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card fade-in">
+      <h2>Education</h2>
+      <p><strong>Dr. A.P.J. Abdul Kalam Technical University (AKTU), Lucknow</strong><br>
+        B.Tech, Computer Science • 2022–2026</p>
+      <p><strong>RAJAT BVM GIRLS SCHOOL, LUCKNOW</strong><br>
+        12th (Non-Medical) • 2019</p>
+    </section>
+
+    <section class="card fade-in">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Responsive Web Design</li>
+        <li>JavaScript Bootcamp</li>
+        <li>Git &amp; GitHub Bootcamp</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Arpita Singh • Meerut, Uttar Pradesh, India</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
